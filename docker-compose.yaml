@@ -4,9 +4,3 @@ services:
     image: nginx
     ports:
       - 9000:80
-  test:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    depends_on: 
-      - web
